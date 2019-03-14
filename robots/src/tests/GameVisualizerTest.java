@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class GameVisualizerTest {
     @Test
-    void testGetWalls() {
+    public void testGetWalls() {
         GameVisualizer g = new GameVisualizer();
         ArrayList<Point> points = new ArrayList<>();
         for (int i = 0; i < g.walls.length; i += 2) {
@@ -26,7 +26,7 @@ class GameVisualizerTest {
     }
 
     @Test
-    void testGetMines() {
+    public void testGetMines() {
         GameVisualizer g = new GameVisualizer();
         ArrayList<Point> points = new ArrayList<Point>();
         for (int i = 0; i < g.mines.length; i += 1){
